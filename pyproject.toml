@@ -32,3 +32,6 @@ line-length = 88
 
 [tool.ruff.lint]
 extend-select = ["B", "I", "UP"]
+
+[tool.ruff.lint.isort]
+known-third-party = ["alembic"]

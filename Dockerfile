@@ -12,6 +12,8 @@ COPY pyproject.toml uv.lock ./
 RUN uv sync --locked --no-install-project
 
 COPY app ./app
+COPY alembic ./alembic
+COPY alembic.ini ./
 
 RUN groupadd --system app \
     && useradd --system --gid app --no-create-home app \
